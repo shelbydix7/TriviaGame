@@ -1,0 +1,144 @@
+body {
+  background-image: url('../images/background.jpeg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 2rem;
+    color: #DC143C;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    text-align: center;
+    color:#DC143C;
+  }
+  h2#question {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    color:#DC143C;
+  }
+
+  h2.correct {
+    margin-top: -1rem;
+  }
+
+  div.game {
+    color: #2F4F4F;
+    position: relative;
+    margin: 1vh auto;
+    width: 60%;
+    height: 93vh;
+    background-color: #ebdccb;
+  }
+
+  button,
+h2#startover {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00BFFF;
+  color: #2F4F4F;
+  border: 3px solid #ADFF2F;
+  padding: 10px 150px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+h2.correct-result {
+    margin-top: 3.3rem;
+  }
+
+  h2#startover {
+    position: relative;
+    display: inline-block;
+    margin-top: 100px;
+    padding: 10px 50px;
+  }
+  
+  button:hover,
+  h2#startover:hover {
+    background-color: #88c5d0;
+    color: #74646e;
+    border-color: #9f8f98;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  ul {
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    width: 400px;
+    cursor: pointer;
+    font-size: 1.7rem;
+    margin: 20px auto;
+    padding: 7px 0;
+    border: 2px solid transparent;
+    transition: 0.3s ease-in-out;
+  }
+  
+  li:hover {
+    /* #73B1BC #69A7B2 */
+    background-color: #8cc6d0;
+    border: 2px solid #91818a;
+  }
+  
+  video {
+    display: block;
+    margin: 0 auto;
+    height: 260px;
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    h1 {
+      font-size: 3rem;
+    }
+  
+    div.game {
+      margin: 1vh auto;
+      width: 80%;
+      height: 92vh;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3.8rem;
+    }
+    div.game {
+      height: 89vh;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 4.5rem;
+    }
+    div.game {
+      height: 88vh;
+    }
+  }
