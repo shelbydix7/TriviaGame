@@ -17,8 +17,9 @@
     let correctText = $('h2.correct');
     let correctSpan = $('span.correct');
     let status = $('h2#status');
-    let gifSrc = '';
-    let gif = $('img');
+    
+    
+    
     let correct = 0;
     let incorrect = 0;
     let unanswered = 0;
@@ -107,7 +108,7 @@
         $.get(url)
           .done(data => {
             gifSrc = data.data[0].images.original.url;
-            gif.attr('src', gifSrc);
+            
           })
           .fail(error => {
             console.log(error);
@@ -150,8 +151,8 @@
         }, 4000);
       },
       startTimer: () => {
-        timerDisplay.html(`Time Remaining: 30 Seconds`);
-        time = 30;
+        timerDisplay.html(`Time Remaining: 15 Seconds`);
+        time = 15;
         timeClock = setInterval(() => {
           time--;
           timerDisplay.html(
@@ -201,7 +202,7 @@
           return item;
         });
   
-        optionList.on('click', '.choice', function() {
+        optionList.on('click', '.option', function() {
           clearInterval(timeClock);
           status.removeClass('hidden');
           optionList.addClass('hidden');

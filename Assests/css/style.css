@@ -123,22 +123,4 @@ h2.correct-result {
     }
   }
   
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-    h1 {
-      font-size: 3.8rem;
-    }
-    div.game {
-      height: 89vh;
-    }
-  }
-  
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
-    h1 {
-      font-size: 4.5rem;
-    }
-    div.game {
-      height: 88vh;
-    }
-  }
+ 
