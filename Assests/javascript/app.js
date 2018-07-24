@@ -17,9 +17,6 @@
     let correctText = $('h2.correct');
     let correctSpan = $('span.correct');
     let status = $('h2#status');
-    
-    
-    
     let correct = 0;
     let incorrect = 0;
     let unanswered = 0;
@@ -126,7 +123,7 @@
           .toLowerCase()
           .trim()
           .replace(' ', '+');
-        game.getGif();
+        
         game.startTimer();
         start.addClass('hidden');
         content.removeClass('hidden');
@@ -139,7 +136,7 @@
   
       result: () => {
         setTimeout(() => {
-          gif.addClass('hidden');
+          
           questionText.addClass('hidden');
           correctText.addClass('hidden');
           timerDisplay.addClass('hidden');
@@ -170,7 +167,7 @@
             message.removeClass('hidden');
             correctText.removeClass('hidden');
             status.text('');
-            gif.removeClass('hidden');
+            
             if (questionNum < 10) {
               setTimeout(game.reset, 4000);
             } else {
@@ -207,7 +204,7 @@
           status.removeClass('hidden');
           optionList.addClass('hidden');
           message.removeClass('hidden');
-          gif.removeClass('hidden');
+          
           if ($(this).text() === answers[questionNum]) {
             correct++;
             correctText.addClass('hidden');
